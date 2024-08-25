@@ -344,3 +344,49 @@ textarea {
         margin-bottom: 0;
     }
 }
+/* Estilos generales para la página */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.left-section, .right-section {
+    flex: 1;
+    margin: 10px;
+}
+
+.right-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Estilos específicos para pantallas móviles */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .left-section {
+        width: 100%;
+        margin-bottom: 20px;
+    }
+
+    .right-section {
+        width: 100%;
+        margin-top: 20px;
+        text-align: center;
+    }
+
+    /* Ocultar la imagen en pantallas móviles */
+    .right-section img {
+        display: none;
+    }
+
+    /* Asegúrate de que el espacio para el texto procesado se muestre debajo de la advertencia */
+    .warning {
+        margin-bottom: 20px;
+    }
+}
